@@ -1,0 +1,22 @@
+# Scala build output
+target/
+project/target/
+project/project/
+.scala-build/
+
+# Scala IDE metadata
+.bsp/
+.bloop/
+.metals/
+.idea/
+.vscode/
+
+# Compiled files
+*.class
+*.tasty
+*.log
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+build.sbt.semanticdb
+project/metals.sbt
