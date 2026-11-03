@@ -1,0 +1,22 @@
+# ==============================================================================
+# Local Environment Configuration Template
+# Copy this file to src/main/resources/local.conf to customize your local machine:
+#   cp src/main/resources/local.conf.template src/main/resources/local.conf
+# Note: local.conf is ignored by git.
+# ==============================================================================
+include "application.conf"
+
+grpc {
+  server {
+    host = "127.0.0.1"
+    host = ${?GRPC_HOST}
+
+    port = 3031
+    port = ${?GRPC_PORT}
+  }
+}
+
+pekko {
+  loglevel = "DEBUG"
+  loglevel = ${?LOG_LEVEL}
+}

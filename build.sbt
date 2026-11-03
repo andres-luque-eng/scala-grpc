@@ -11,7 +11,9 @@ lazy val root = (project in file("."))
       "org.apache.pekko" %% "pekko-actor-typed" % "1.1.2",
       "org.apache.pekko" %% "pekko-stream"      % "1.1.2",
       "org.apache.pekko" %% "pekko-http"        % "1.1.0",
-      // SLF4J implementation: required to see Pekko and server log output instead of defaulting to NOP logger
-      "ch.qos.logback"    % "logback-classic"   % "1.5.12"
+      // SLF4J provider to eliminate NOP warning and show server logs
+      "ch.qos.logback"    % "logback-classic"   % "1.5.12",
+      // Testing framework with native Scala 3 and async Future support
+      "org.scalameta"    %% "munit"             % "1.1.0" % Test
     )
   )
