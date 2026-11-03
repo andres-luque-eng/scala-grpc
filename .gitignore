@@ -20,3 +20,7 @@ project/project/
 hs_err_pid*
 build.sbt.semanticdb
 project/metals.sbt
+
+# Local configuration overrides
+src/main/resources/local.conf
+
